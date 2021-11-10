@@ -1,0 +1,12 @@
+#remove objectives
+scoreboard objectives remove LastOneAltruist
+scoreboard objectives remove LastOneAssassin
+scoreboard objectives remove LastOneJester
+scoreboard objectives remove LastOneSheriff
+scoreboard objectives remove LastOneZippy
+scoreboard objectives remove LastOneThief
+scoreboard objectives remove LastOneZog
+scoreboard objectives remove LastOneBerserker
+scoreboard objectives remove LastOneLover
+
+gamerule commandBlockOutput true
