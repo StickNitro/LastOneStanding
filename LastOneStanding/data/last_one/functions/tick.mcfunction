@@ -1,11 +1,11 @@
 schedule function last_one:tick 1t
 
-#contender
-execute as @a[scores={LastOneContender=1}] at @s run function last_one:contender
+execute as @a at @s if score @s LastLifeStart matches 1 run function last_one:start
+execute as @a at @s if score @s LastLifeStart matches 1 run scoreboard players set @a LastLifeStart 0
 
 #death
 execute as @a at @s if score @s LastOneDeath matches 1 run function last_one:death
-execute as @a at @s if score @s LastOneDeath matches 1 run scoreboard players remove @s LastOneLifes 1
+execute as @a at @s if score @s LastOneDeath matches 1 run scoreboard players remove @s LastOneLives 1
 execute as @a at @s if score @s LastOneDeath matches 1 run scoreboard players set @a LastOneDeath 0
 
 #join team based on lives
@@ -18,3 +18,11 @@ execute as @a[team=0life] run gamemode spectator @s
 
 #get role
 execute as @a[scores={LastOneRole=1..}] at @s run function last_one:getrole
+
+
+execute if score $tick LastLifeTimer matches 0 run scoreboard players add $second LastLifeTimer 1
+scoreboard players add $tick LastLifeTimer 1
+execute if score $tick LastLifeTimer matches 20.. run scoreboard players set $tick LastLifeTimer 0
+
+execute if score $second LastLifeTimer matches 60 run scoreboard players add $minute LastLifeTimer 1
+execute if score $second LastLifeTimer matches 60 run scoreboard players set $second LastLifeTimer 0

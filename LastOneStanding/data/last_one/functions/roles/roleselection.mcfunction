@@ -14,3 +14,5 @@ title @a times 20 60 20
 execute as @a at @s if score @s RoleHunter matches 1 run function last_one:roles/hunterroleselection
 execute as @a at @s unless score @s RoleHunter matches 1 unless score @s RoleRedLife matches 1 run scoreboard players set @s RoleCivilian 1
 execute as @a at @s if score @s RoleCivilian matches 1 run function last_one:roles/civilianroleselection
+
+kill @e[tag=Role,type=armor_stand]
