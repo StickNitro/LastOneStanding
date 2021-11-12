@@ -9,6 +9,7 @@ team join gracelife @a
 scoreboard players reset @a LastOneLives
 
 #remove not needed scoreboards
+scoreboard objectives remove LastLifeVers
 scoreboard objectives remove LastLifeStart
 
 #timer
@@ -17,3 +18,4 @@ scoreboard players set $second LastLifeTimer 0
 scoreboard players set $minute LastLifeTimer 0
 
 scoreboard players set #running LastLifeRound 0
+execute if score #hunter LastLifeconfig matches 1.. run scoreboard players enable @a LastLifeRound

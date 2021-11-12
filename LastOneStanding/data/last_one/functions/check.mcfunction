@@ -1,0 +1,5 @@
+execute if score @s LastLifeLives matches 0 run tellraw @s ["",{"text":"You have ","color":"gray"},{"score":{"name":"@s","objective":"LastLifeLives"},"color":"gray"},{"text":" lives.","color":"gray"}]
+execute if score @s LastLifeLives matches 1 run tellraw @s ["",{"text":"You have ","color":"gray"},{"score":{"name":"@s","objective":"LastLifeLives"},"color":"red"},{"text":" life.","color":"gray"}]
+execute if score @s LastLifeLives matches 2 run tellraw @s ["",{"text":"You have ","color":"gray"},{"score":{"name":"@s","objective":"LastLifeLives"},"color":"yellow"},{"text":" lives.","color":"gray"}]
+execute if score @s LastLifeLives matches 3 run tellraw @s ["",{"text":"You have ","color":"gray"},{"score":{"name":"@s","objective":"LastLifeLives"},"color":"green"},{"text":" lives.","color":"gray"}]
+execute if score @s LastLifeLives matches 4.. run tellraw @s ["",{"text":"You have ","color":"gray"},{"score":{"name":"@s","objective":"LastLifeLives"},"color":"dark_green"},{"text":" lives.","color":"gray"}]

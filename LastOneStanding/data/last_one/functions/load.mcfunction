@@ -30,10 +30,13 @@ scoreboard objectives add LastOneBerserker dummy "Player is slower untill death"
 scoreboard objectives add LastOneLover dummy "Player falls amdly in love with another player"
 
 #scoreboards for the last life code
+scoreboard objectives add LastLifeConfig dummy
+scoreboard objectives add LastLifeVers trigger
 scoreboard objectives add LastLifeRoll dummy
-scoreboard objectives add LastLifeRound trigger "round amount timer"
+scoreboard objectives add LastLifeRound trigger  "round amount timer"
 scoreboard objectives add LastLifeCheck trigger "check amount of lives"
 scoreboard objectives add LastLifeTimer dummy
+scoreboard objectives add LastLifeBorder trigger
 
 scoreboard objectives add LastLifeStart trigger
 

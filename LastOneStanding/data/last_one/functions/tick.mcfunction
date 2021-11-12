@@ -1,7 +1,15 @@
 schedule function last_one:tick 1t
 
+execute as @a if score @s LastLifeVers matches 2 run function last_one:config/last_one
+
+execute as @a if score @s LastLifeBorder matches 2 run function last_life:config/enable_border
+execute as @a if score @s LastLifeBorder matches 1 run function last_life:config/disable_border
+
 execute as @a at @s if score @s LastLifeStart matches 1 run function last_one:start
 execute as @a at @s if score @s LastLifeStart matches 1 run scoreboard players set @a LastLifeStart 0
+
+#check lives
+execute as @a at @s if score @s LastLifeCheck matches 1.. run function last_one:check
 
 #death
 execute as @a at @s if score @s LastOneDeath matches 1 run function last_one:death
