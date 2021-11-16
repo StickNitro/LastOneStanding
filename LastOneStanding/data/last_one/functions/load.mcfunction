@@ -35,6 +35,7 @@ scoreboard objectives add LastLifeVers trigger
 scoreboard objectives add LastLifeRoll dummy
 scoreboard objectives add LastLifeRound trigger  "round amount timer"
 scoreboard objectives add LastLifeCheck trigger "check amount of lives"
+scoreboard objectives add LastLifeTime trigger  "time left for hunter to kill"
 scoreboard objectives add LastLifeTimer dummy
 scoreboard objectives add LastLifeBorder trigger
 

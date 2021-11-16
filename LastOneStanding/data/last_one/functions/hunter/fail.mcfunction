@@ -7,5 +7,5 @@ scoreboard players reset @s[scores={LastOneHunter=1}] LastOneHunter
 execute as @a at @s run scoreboard objectives remove LastLifeRound
 execute as @a at @s run scoreboard objectives add LastLifeRound trigger "round amount timer"
 scoreboard players set #running LastLifeRound 0
-execute if score #boogey LastLifeconfig matches 1 run scoreboard players enable @a LastLifeRound
+execute if score #hunter LastLifeConfig matches 1 run scoreboard players enable @a LastLifeRound
 

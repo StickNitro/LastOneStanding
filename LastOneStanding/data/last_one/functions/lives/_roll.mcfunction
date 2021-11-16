@@ -243,6 +243,5 @@ execute as @a at @s if score #roll LastLifeRoll matches 300 if score @s LastOneL
 
 
 
-
 execute if score #roll2 LastLifeRoll matches 1 run scoreboard players set #roll2 LastLifeRoll 0
 execute if score #roll3 LastLifeRoll matches 1 run scoreboard players set #roll3 LastLifeRoll 0

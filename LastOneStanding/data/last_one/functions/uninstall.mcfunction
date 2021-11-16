@@ -20,8 +20,12 @@ scoreboard objectives remove RoleRedLife
 scoreboard objectives remove LastLifeRoll
 scoreboard objectives remove LastLifeRound
 scoreboard objectives remove LastLifeCheck
+scoreboard objectives remove LastLifeTime
 scoreboard objectives remove LastLifeTimer
 scoreboard objectives remove LastLifeStart
+scoreboard objectives remove LastLifeBorder
+scoreboard objectives remove LastLifeConfig
+scoreboard objectives remove LastLifeVers
 
 gamerule commandBlockOutput true
 
