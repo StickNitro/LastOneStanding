@@ -1,1 +1,6 @@
+version 0.2 updated 16-11-2021
+added trigger to view lives remaining
+added trigger to view session time remaining
+various bug fixes
+
 version 0.1 updated 12-11-2021
