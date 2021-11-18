@@ -11,6 +11,9 @@ execute as @a at @s if score @s LastLifeStart matches 1 run scoreboard players s
 #check lives
 execute as @a at @s if score @s LastLifeCheck matches 1.. run function last_one:check
 
+#give lives trigger
+execute as @a[scores={LastLifeGive=1..},team=!0life] at @s run function last_one:givelife
+
 #death
 execute as @a at @s if score @s LastOneDeath matches 1 run function last_one:death
 execute as @a at @s if score @s LastOneDeath matches 1 run scoreboard players remove @s LastOneLives 1

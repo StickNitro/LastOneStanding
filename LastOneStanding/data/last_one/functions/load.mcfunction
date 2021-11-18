@@ -38,6 +38,7 @@ scoreboard objectives add LastLifeCheck trigger "check amount of lives"
 scoreboard objectives add LastLifeTime trigger  "time left for hunter to kill"
 scoreboard objectives add LastLifeTimer dummy
 scoreboard objectives add LastLifeBorder trigger
+scoreboard objectives add LastLifeGive trigger "used to give lives to the nearest player"
 
 scoreboard objectives add LastLifeStart trigger
 
