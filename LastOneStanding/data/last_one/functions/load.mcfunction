@@ -1,4 +1,4 @@
-tellraw @a {"text": "My Code is LOad", "color": "#00FF00"}
+#tellraw @a {"text": "My Code is LOad", "color": "#00FF00"}
 
 #scoreboards
 scoreboard objectives add LastOneLives dummy "Lives"
@@ -39,6 +39,7 @@ scoreboard objectives add LastLifeTime trigger  "time left for hunter to kill"
 scoreboard objectives add LastLifeTimer dummy
 scoreboard objectives add LastLifeBorder trigger
 scoreboard objectives add LastLifeGive trigger "used to give lives to the nearest player"
+scoreboard objectives add LastLifeRecipe trigger
 
 scoreboard objectives add LastLifeStart trigger
 

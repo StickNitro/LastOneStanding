@@ -26,6 +26,7 @@ scoreboard objectives remove LastLifeStart
 scoreboard objectives remove LastLifeBorder
 scoreboard objectives remove LastLifeConfig
 scoreboard objectives remove LastLifeVers
+scoreboard objectives remove LastLifeRecipe
 
 gamerule commandBlockOutput true
 

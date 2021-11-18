@@ -1,5 +1,4 @@
 #random lives
-tellraw @a {"text": "randomlife"}
 summon armor_stand ~ ~ ~ {Tags:["LastLife2","LastOneLives"],Invisible:1b,Marker:1b}
 summon armor_stand ~ ~ ~ {Tags:["LastLife3","LastOneLives"],Invisible:1b,Marker:1b}
 summon armor_stand ~ ~ ~ {Tags:["LastLife4","LastOneLives"],Invisible:1b,Marker:1b}

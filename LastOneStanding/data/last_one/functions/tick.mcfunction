@@ -2,6 +2,9 @@ schedule function last_one:tick 1t
 
 execute as @a if score @s LastLifeVers matches 2 run function last_one:config/last_one
 
+execute as @a if score @s LastLifeRecipe matches 2 run function last_one:config/enable_recipe
+execute as @a if score @s LastLifeRecipe matches 1 run function last_one:config/disable_recipe
+
 execute as @a if score @s LastLifeBorder matches 2 run function last_one:config/enable_border
 execute as @a if score @s LastLifeBorder matches 1 run function last_one:config/disable_border
 
@@ -30,6 +33,7 @@ execute as @a unless entity @s[team=3life] if score @s LastOneLives matches 3 ru
 execute as @a unless entity @s[team=4+life] if score @s LastOneLives matches 4.. run team join 4+life
 execute as @a[team=0life] run gamemode spectator @s
 
+function last_one:enchanterspawn
 function last_one:enable_trigger
 
 #get role (not sure what this is doing!!!)

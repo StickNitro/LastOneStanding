@@ -1,3 +1,9 @@
+version 0.3 updated 18-11-2021
+added trigger to give lives to nearest player
+added config to enable custom recipes
+added spawn area and enchanter - removes enchanter from crafting and enables custom recipes
+
+
 version 0.2 updated 16-11-2021
 added trigger to view lives remaining
 added trigger to view session time remaining
