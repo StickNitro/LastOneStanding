@@ -36,8 +36,9 @@ execute as @a[team=0life] run gamemode spectator @s
 function last_one:enchanterspawn
 function last_one:enable_trigger
 
-#get role (not sure what this is doing!!!)
-#execute as @a[scores={LastOneRole=1..}] at @s run function last_one:getrole
+#get role (not sure what this is doing!!!)(it's to trigger the get role function used for testing purposes it needs to be removed for a final version)
+execute as @a[scores={LastOneRole=1..}] at @s run function last_one:getrole
+execute as @a[scores={LastOneCupid=1..}] at @s run function last_one:lovers/assignlovers
 
 #use trigger to set hunter time, hunter will be called on /trigger LastLifeRound set xx
 execute as @a[scores={LastLifeRound=..-1}] as @s if score @s LastLifeRound matches ..-1 run function last_one:hunter/error

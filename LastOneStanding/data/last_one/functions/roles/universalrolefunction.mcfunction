@@ -1,1 +1,0 @@
-execute as @a[scores={Role=1..}] at @s run function last_one:roles/getuniversalrole

@@ -10,6 +10,7 @@ scoreboard objectives add HasRole dummy "used to check if player has role or not
 scoreboard players set @a HasRole 0
 scoreboard objectives add Role dummy "corrosponds to a role"
 scoreboard objectives add LastOneRole trigger "Used to get your role"
+scoreboard objectives add LastOneCupid trigger "Used to assign lovers"
 
 scoreboard objectives add RoleHunter dummy "get a random hunter role"
 scoreboard objectives add RoleCivilian dummy "get a random civilian role"
@@ -28,6 +29,7 @@ scoreboard objectives add LastOneZog dummy "Player is slower untill death"
 scoreboard objectives add LastOneBerserker dummy "Player is slower untill death"
 
 scoreboard objectives add LastOneLover dummy "Player falls amdly in love with another player"
+scoreboard players set @a LastOneLover 0
 
 #scoreboards for the last life code
 scoreboard objectives add LastLifeConfig dummy

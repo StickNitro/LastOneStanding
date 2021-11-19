@@ -1,0 +1,1 @@
+execute as @s at @s run tellraw @s ["",{"text": "You are in love with:"},{"selector":"@p[scores={LastOneLover=1},distance=1..]"}]

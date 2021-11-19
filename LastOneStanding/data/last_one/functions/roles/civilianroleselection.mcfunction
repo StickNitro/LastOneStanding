@@ -19,6 +19,6 @@ execute as @s run scoreboard players operation @s Role = @e[tag=Role,sort=random
 #tell role
 title @a times 20 60 20
 
-execute if score @s Role matches 1 run title @s title {"text": "The Sheriff", "color": "blue"}
-execute if score @s Role matches 2 run title @s title {"text": "The Jester", "color": "#28a12e"}
-execute if score @s Role matches 3 run title @s title {"text": "The Altruist", "color": "#79aaf7"}
+execute if score @s Role matches 1 run function last_one:roles/sheriff
+execute if score @s Role matches 2 run function last_one:roles/jester
+execute if score @s Role matches 3 run function last_one:roles/altruist
