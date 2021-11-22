@@ -40,6 +40,7 @@ execute if score #recipe LastLifeConfig matches 1 run function last_one:enchante
 scoreboard objectives remove LastLifeVers
 scoreboard objectives remove LastLifeStart
 scoreboard objectives remove LastLifeBorder
+scoreboard objectives remove LastLifeRecipe
 
 #timer
 scoreboard players set #tick LastLifeTimer 0
