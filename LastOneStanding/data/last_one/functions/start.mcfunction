@@ -17,6 +17,16 @@ execute if score #border LastLifeConfig matches 1 run worldborder set 500
 #recipes
 gamerule doLimitedCrafting true
 recipe give @a *
+execute if score #recipe LastLifeConfig matches 0 run recipe take @a lastone:lastone_nametag
+execute if score #recipe LastLifeConfig matches 0 run recipe take @a lastone:lastone_saddle
+execute if score #recipe LastLifeConfig matches 0 run recipe take @a lastone:lastone_spore
+execute if score #recipe LastLifeConfig matches 0 run recipe take @a lastone:lastone_tnt
+execute if score #recipe LastLifeConfig matches 0 run recipe take @a lastone:lastone_cobweb
+execute if score #recipe LastLifeConfig matches 1 run recipe give @a lastone:lastone_nametag
+execute if score #recipe LastLifeConfig matches 1 run recipe give @a lastone:lastone_saddle
+execute if score #recipe LastLifeConfig matches 1 run recipe give @a lastone:lastone_spore
+execute if score #recipe LastLifeConfig matches 1 run recipe give @a lastone:lastone_tnt
+execute if score #recipe LastLifeConfig matches 1 run recipe give @a lastone:lastone_cobweb
 execute if score #recipe LastLifeConfig matches 1 run recipe take @a minecraft:enchanting_table
 execute if score #recipe LastLifeConfig matches 1 run recipe take @a minecraft:bookshelf
 

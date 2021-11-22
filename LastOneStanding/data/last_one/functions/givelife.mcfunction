@@ -1,4 +1,4 @@
-execute as @s at @s run tellraw @s ["", {"text": "You gave your life to ","color": "white"},{"selector": "@p[scores={LastLiveGive=0},team=!0life]"}]
+execute as @s at @s run tellraw @s ["", {"text": "You gave your life to ","color": "white"},{"selector": "@p[scores={LastLifeGive=0},team=!0life]"}]
 execute as @s at @s run tellraw @p[scores={LastLifeGive=0},team=!0life] ["", {"text": "You received a life from ","color": "white"},{"selector":"@s"}]
 execute as @s at @s run scoreboard players remove @s LastOneLives 1
 execute as @s at @s run particle totem_of_undying ~ ~1 ~ 1 1 1 0 50 normal @a

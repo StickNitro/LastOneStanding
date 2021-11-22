@@ -1,3 +1,7 @@
+version 0.4 updated 22-11-2021
+added custom recipes
+fixed bug where player name would not display when giving life to player
+
 version 0.3 updated 18-11-2021
 added trigger to give lives to nearest player
 added config to enable custom recipes
